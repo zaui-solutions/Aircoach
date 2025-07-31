@@ -1644,8 +1644,8 @@
         // Function to show the AI insights modal
         function showInsightModal(title) {
             modalTitle.textContent = title; // Set the title immediately
-            modalText.innerHTML = ''; // Clear previous content
-            modalLoadingSpinner.classList.remove('hidden'); // Show modal's internal spinner
+            modalText.innerHTML = '<div class="ai-loading-spinner"><span class="loading-spinner"></span> Generating insight...</div>'; // Show internal modal spinner and message
+            modalLoadingSpinner.classList.remove('hidden'); // Ensure modal's internal spinner is visible
             copyInsightsBtn.classList.add('hidden'); // Hide copy button
             insightsModal.classList.add('show'); // Show the modal
         }
@@ -1689,6 +1689,9 @@
             showLoading(); // Show full-page bus loading animation
 
             try {
+                // Add a small delay to ensure the loading animation is visible
+                await new Promise(resolve => setTimeout(resolve, 300));
+
                 let chatHistory = [];
                 chatHistory.push({ role: "user", parts: [{ text: promptText }] });
                 const payload = { contents: chatHistory };
@@ -1847,13 +1850,57 @@
             await getAIExplanation(prompt);
         });
 
+        // Case Study AI Insight buttons
+        document.querySelectorAll('.generate-insights-btn').forEach(button => {
+            button.addEventListener('click', async () => {
+                const title = button.dataset.title;
+                const snippet = button.dataset.snippet;
+
+                showInsightModal(`AI Insight for Aircoach: ${title}`); // Show modal with title and loading spinner
+                button.disabled = true; // Disable button during loading
+
+                const prompt = `Provide an AI insight for Aircoach based on the case study titled "${title}" which highlights "${snippet}". Focus on how Aircoach can leverage these findings. Structure your response with:\n\nStrategic Imperative for Aircoach:\n[1-2 sentences]\n\nActionable Zaui Steps:\n1. [Step 1]\n2. [Step 2]\n3. [Step 3]`;
+
+                try {
+                    let chatHistory = [];
+                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                    const payload = { contents: chatHistory };
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        modalText.innerHTML = text; // Use innerHTML for formatted text
+                        copyInsightsBtn.onclick = () => copyToClipboard(text);
+                        copyInsightsBtn.classList.remove('hidden'); // Show copy button
+                    } else {
+                        modalText.innerHTML = 'Failed to generate insight. Please try again.';
+                    }
+                } catch (error) {
+                    console.error('Error generating insight:', error);
+                    modalText.innerHTML = 'An error occurred while generating the insight. Please try again later.';
+                } finally {
+                    modalLoadingSpinner.classList.add('hidden'); // Hide spinner
+                    button.disabled = false; // Re-enable button
+                }
+            });
+        });
+
         // Blog Summarizer
         document.querySelectorAll('.summarize-blog-btn').forEach(button => {
             button.addEventListener('click', async () => {
                 const title = button.dataset.title;
                 const snippet = button.dataset.snippet;
                 
-                showInsightModal(`AI Summary for: ${title}`); // Show modal with title
+                showInsightModal(`AI Summary for: ${title}`); // Show modal with title and loading spinner
                 button.disabled = true; // Disable button during loading
 
                 const prompt = `Summarize the key takeaways from a blog post titled "${title}" which is about "${snippet}". Focus on actionable insights for transport operators. What does this mean for Aircoach?`;
