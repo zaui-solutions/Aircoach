@@ -148,6 +148,16 @@
             transform: translateY(-5px) scale(1.02);
             box-shadow: 0 8px 15px rgba(0,0,0,0.4);
         }
+        
+        #irish-expertise .content-card {
+            background-color: #1a202c; /* Even darker to stand out */
+            border-left: 5px solid #EE9B00; /* Zaui Orange accent */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        #irish-expertise .content-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.6);
+        }
 
         #webinars .content-card {
             background-color: #1a202c; /* Even darker for video feel */
@@ -675,6 +685,10 @@
                     <h4 class="text-xl font-semibold text-blue-200 mb-2">Quantifiable Impact</h4>
                     <p class="text-gray-400 text-sm">Dive into key performance indicators and proven results from Zaui clients, with AI-powered insights tailored for Aircoach.</p>
                 </div>
+                <div class="bg-gray-800 rounded-lg p-4 shadow-md cursor-pointer transition-all duration-300 transform hover:scale-105" data-target="irish-expertise">
+                    <h4 class="text-xl font-semibold text-blue-200 mb-2">Irish Expertise</h4>
+                    <p class="text-gray-400 text-sm">See how we've helped Irish operators like Airporter succeed in the local market, and how this experience benefits Aircoach.</p>
+                </div>
                 <div class="bg-gray-800 rounded-lg p-4 shadow-md cursor-pointer transition-all duration-300 transform hover:scale-105" data-target="revenue-section">
                     <h4 class="text-xl font-semibold text-blue-200 mb-2">Revenue Potential</h4>
                     <p class="text-gray-400 text-sm">Explore how Zaui helps maximize revenue through dynamic pricing, expanded sales channels, and efficient booking.</p>
@@ -718,6 +732,7 @@
                 <div class="flex flex-wrap justify-center gap-4">
                     <button class="category-filter-btn bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full transition-colors duration-300" data-category="all">All Content</button>
                     <button class="category-filter-btn bg-gray-700 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full transition-colors duration-300" data-category="quantifiable-impact">Quantifiable Impact</button>
+                    <button class="category-filter-btn bg-gray-700 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full transition-colors duration-300" data-category="irish-expertise">Irish Expertise</button>
                     <button class="category-filter-btn bg-gray-700 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full transition-colors duration-300" data-category="revenue-section">Revenue</button>
                     <button class="category-filter-btn bg-gray-700 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full transition-colors duration-300" data-category="efficiency-section">Efficiency</button>
                     <button class="category-filter-btn bg-gray-700 hover:bg-blue-700 text-white font-bold py-2 px-5 rounded-full transition-colors duration-300" data-category="customer-experience-section">Customer Experience</button>
@@ -854,7 +869,32 @@
                     </div>
                 </div>
             </section>
-
+            
+            <!-- Irish Expertise Section (New) -->
+            <section id="irish-expertise" class="content-section">
+                <h3 class="text-2xl sm:text-3xl font-semibold mb-6 text-blue-400 border-b border-blue-600 pb-2">
+                    Our Irish Expertise: A Proven Track Record
+                </h3>
+                <div class="bg-gray-800 rounded-lg p-6 shadow-lg mb-8">
+                    <p class="text-gray-400 text-lg">
+                        Zaui's deep understanding of the Irish transport market is a key differentiator. We've successfully partnered with operators like Airporter, gaining invaluable insights into the unique challenges and opportunities of the Irish airport transfer sector. This experience directly translates into a customized, impactful solution for Aircoach, ensuring we can address your specific needs from day one.
+                    </p>
+                </div>
+                <!-- New Airporter Case Study Card (highlighted) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="content-card rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-transparent hover:border-orange-500">
+                        <h4 class="text-xl font-semibold mb-2 text-blue-200">Zaui & Airporter: Transportation Secrets for Growth in Ireland</h4>
+                        <p class="text-gray-400 text-sm mb-3">Discover how Zaui helped Irish transport company Airporter achieve significant growth and operational excellence in the Irish market.</p>
+                        <a href="https://www.zaui.com/blog/airporter-transportation-secrets-for-growth/" target="_blank" class="inline-block text-blue-400 hover:text-blue-300 font-medium text-sm">Read Case Study &rarr;</a>
+                        <button class="generate-insights-btn mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 text-sm"
+                                data-title="Zaui & Airporter: Irish Airport Transfer Expertise"
+                                data-snippet="Airporter, a leading Irish airport transfer service, leveraged Zaui's platform to streamline operations and enhance growth. This case study demonstrates Zaui's deep understanding of the unique challenges and opportunities within the Irish market, offering valuable insights for Aircoach on optimizing efficiency, managing high passenger volumes, and building a strong local brand.">
+                            ✨ AI Insight for Aircoach
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
             <!-- Revenue Section -->
             <section id="revenue-section" class="content-section py-8 px-6 section-bg-dark-content rounded-xl mb-12 section-text-light-content">
                 <div class="container mx-auto max-w-6xl">
@@ -1070,13 +1110,13 @@
                         <p class="text-gray-400 text-sm mb-3">Insights from Zaui experts on how to prepare your business for success in the upcoming year.</p>
                         <a href="https://offer.zaui.com/webinar-set-yourself-up-for-success-in-2025-with-zaui-0" target="_blank" class="inline-block text-blue-400 hover:text-blue-300 font-medium text-sm mt-4">Watch Now &rarr;</a>
                     </div>
-                     <!-- Webinar 7 -->
+                      <!-- Webinar 7 -->
                     <div class="content-card rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-transparent hover:border-blue-500">
                         <h4 class="text-xl font-semibold mb-2 text-blue-200">Get your Zaui System Ready to Handle the Peak Season with Confidence</h4>
                         <p class="text-gray-400 text-sm mb-3">Tips and best practices for optimizing your Zaui booking system to handle peak season demands seamlessly.</p>
                         <a href="https://offer.zaui.com/webinar-optimizing-your-booking-system-ready-for-peak-season" target="_blank" class="inline-block text-blue-400 hover:text-blue-300 font-medium text-sm mt-4">Watch Now &rarr;</a>
                     </div>
-                     <!-- Webinar 8 -->
+                      <!-- Webinar 8 -->
                     <div class="content-card rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-transparent hover:border-blue-500">
                         <h4 class="text-xl font-semibold mb-2 text-blue-200">AI & Chatbot Best Practices</h4>
                         <p class="text-gray-400 text-sm mb-3">Explore best practices for integrating AI and chatbots into your operations for enhanced customer service and efficiency.</p>
@@ -1622,7 +1662,7 @@
 
 
         // API Key
-        const API_KEY = "AIzaSyAZUCcRoIyIl7hwcOKU1PR-sd2BuZapsyE"; // Replaced with the provided API key
+        const API_KEY = ""; // Replaced with the provided API key
 
         // AI Explanation Modal & Elements
         const insightsModal = document.getElementById('insightsModal');
