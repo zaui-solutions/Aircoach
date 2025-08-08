@@ -365,7 +365,7 @@
         .cta-button:hover {
             background-color: #CA6702; /* Darker CTA Orange */
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            box-shadow: 10px 20px rgba(0, 0, 0, 0.3);
         }
         .cta-button:active {
             transform: translateY(1px);
@@ -880,141 +880,28 @@
                         Zaui's deep understanding of the Irish transport market is a key differentiator. We've successfully partnered with operators like Airporter, gaining invaluable insights into the unique challenges and opportunities of the Irish airport transfer sector. This experience directly translates into a customized, impactful solution for Aircoach, ensuring we can address your specific needs from day one.
                     </p>
                 </div>
-                <!-- New Airporter Case Study Card (highlighted) -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="content-card rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-transparent hover:border-orange-500">
-                        <h4 class="text-xl font-semibold mb-2 text-blue-200">Zaui & Airporter: Transportation Secrets for Growth in Ireland</h4>
-                        <p class="text-gray-400 text-sm mb-3">Discover how Zaui helped Irish transport company Airporter achieve significant growth and operational excellence in the Irish market.</p>
-                        <a href="https://www.zaui.com/blog/airporter-transportation-secrets-for-growth/" target="_blank" class="inline-block text-blue-400 hover:text-blue-300 font-medium text-sm">Read Case Study &rarr;</a>
-                        <button class="generate-insights-btn mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 text-sm"
-                                data-title="Zaui & Airporter: Irish Airport Transfer Expertise"
-                                data-snippet="Airporter, a leading Irish airport transfer service, leveraged Zaui's platform to streamline operations and enhance growth. This case study demonstrates Zaui's deep understanding of the unique challenges and opportunities within the Irish market, offering valuable insights for Aircoach on optimizing efficiency, managing high passenger volumes, and building a strong local brand.">
-                            ✨ AI Insight for Aircoach
-                        </button>
+            </section>
+
+            <!-- Airporter Case Study Section (Expanded and moved) -->
+            <section id="airporter-case-study" class="content-section">
+                <div class="content-card rounded-lg p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-transparent hover:border-orange-500">
+                    <h4 class="text-3xl font-extrabold mb-2 text-blue-200 text-center">
+                        Zaui & Airporter: The Irish Airport Transfer Story
+                    </h4>
+                    <p class="text-gray-400 text-lg text-center mb-6">
+                        Discover how Zaui empowered Irish transport operator Airporter to achieve significant growth and operational excellence in the local market.
+                    </p>
+                    <div class="flex justify-center mb-6">
+                        <a href="https://www.zaui.com/blog/airporter-transportation-secrets-for-growth/" target="_blank" class="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-lg transition-colors duration-300 text-sm">Read Full Case Study &rarr;</a>
                     </div>
+                    <button class="generate-insights-btn mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition-colors duration-300 text-sm"
+                            data-title="Zaui & Airporter: Irish Airport Transfer Expertise"
+                            data-snippet="Airporter, a leading Irish airport transfer service, leveraged Zaui's platform to streamline operations and enhance growth. This case study demonstrates Zaui's deep understanding of the unique challenges and opportunities within the Irish market, offering valuable insights for Aircoach on optimizing efficiency, managing high passenger volumes, and building a strong local brand.">
+                        ✨ Get AI Insight for Aircoach from this Case Study
+                    </button>
                 </div>
             </section>
             
-            <!-- Revenue Section -->
-            <section id="revenue-section" class="content-section py-8 px-6 section-bg-dark-content rounded-xl mb-12 section-text-light-content">
-                <div class="container mx-auto max-w-6xl">
-                    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-16 text-center section-title light-underline">
-                        Unleash Unrivaled Revenue Potential
-                    </h2>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                        <div class="feature-card flex flex-col items-center text-center">
-                            <div id="lottie-revenue-money" class="lottie-animation-container"></div>
-                            <h3 class="text-2xl font-bold text-[#005F73] mt-6 mb-4">Dynamic Pricing Mastery</h3>
-                            <p class="text-lg text-gray-400 mb-4">
-                                Optimize every single seat on every single coach. Zaui’s advanced dynamic pricing maximizes profitability across Dublin Airport transfers, intercity routes, and special contract services.
-                            </p>
-                            <ul class="list-disc list-inside text-gray-400 space-y-2 text-left w-full">
-                                <li>Maximize profitability across all routes and services.</li>
-                                <li>Intelligently adjust fares to fill off-peak capacity.</li>
-                                <li>Ensure no seat is undervalued, optimizing every journey.</li>
-                            </ul>
-                        </div>
-                        <div class="feature-card flex flex-col items-center text-center">
-                            <div id="lottie-revenue-channels" class="lottie-animation-container"></div>
-                            <h3 class="text-2xl font-bold text-[#005F73] mt-6 mb-4">Expand Global Reach & Boost Direct Bookings</h3>
-                            <p class="text-lg text-gray-400 mb-4">
-                                Connect with millions more passengers worldwide while driving more commission-free bookings directly to Aircoach.
-                            </p>
-                            <ul class="list-disc list-inside text-gray-400 space-y-2 text-left w-full">
-                                <li>Integrate with 30+ major OTAs (Viator, Expedia, GetYourGuide).</li>
-                                <li>Official Google Things to Do partner for commission-free direct bookings.</li>
-                                <li>Supercharge upsells and add-ons directly within your booking flow.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="text-center mt-12">
-                        <button id="revenueInsightBtn" class="cta-button text-base px-6 py-3">
-                            Get AI Insight on Revenue <div id="lottie-ai-brain-small-revenue" class="lottie-animation-container w-8 h-8"></div>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Efficiency Section -->
-            <section id="efficiency-section" class="content-section py-8 px-6 section-bg-dark-content rounded-xl mb-12 section-text-light-content">
-                <div class="container mx-auto max-w-6xl">
-                    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-16 text-center section-title light-underline">
-                        Achieve Unprecedented Operational Efficiency
-                    </h2>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                        <div class="feature-card flex flex-col items-center text-center">
-                            <div id="lottie-efficiency-automation" class="lottie-animation-container"></div>
-                            <h3 class="text-2xl font-bold text-[#005F73] mt-6 mb-4">Intelligent Automation & Management</h3>
-                            <p class="text-lg text-gray-400 mb-4">
-                                Replace manual processes with a powerful, centralized system that works tirelessly for your 61+ vehicle fleet.
-                            </p>
-                            <ul class="list-disc list-inside text-gray-400 space-y-2 text-left w-full">
-                                <li>Comprehensive automation for scheduling and real-time inventory.</li>
-                                <li>Reduce administrative staff by up to 66%.</li>
-                                <li>Complete complex updates 40x faster than traditional methods.</li>
-                            </ul>
-                        </div>
-                        <div class="feature-card flex flex-col items-center text-center">
-                            <div id="lottie-efficiency-checkin" class="lottie-animation-container"></div>
-                            <h3 class="text-2xl font-bold text-[#005F73] mt-6 mb-4">Streamlined Check-in & On-Board Operations</h3>
-                            <p class="text-lg text-gray-400 mb-4">
-                                Ensure lightning-fast passenger processing and empower your team with seamless on-site tools.
-                            </p>
-                            <ul class="list-disc list-inside text-gray-400 space-y-2 text-left w-full">
-                                <li>Mobile app & POS for rapid QR code check-ins.</li>
-                                <li>Minimize queues at Dublin Airport and other hubs.</li>
-                                <li>Empower drivers with efficient contactless payment and walk-up booking.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="text-center mt-12">
-                        <button id="efficiencyInsightBtn" class="cta-button text-base px-6 py-3">
-                            Get AI Insight on Efficiency <div id="lottie-ai-brain-small-efficiency" class="lottie-animation-container w-8 h-8"></div>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Customer Experience Section -->
-            <section id="customer-experience-section" class="content-section py-8 px-6 section-bg-dark-content rounded-xl mb-12 section-text-light-content">
-                <div class="container mx-auto max-w-6xl">
-                    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-16 text-center section-title light-underline">
-                        Elevate the Aircoach Passenger Experience
-                    </h2>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                        <div class="feature-card flex flex-col items-center text-center">
-                            <div id="lottie-cx-booking" class="lottie-animation-container"></div>
-                            <h3 class="text-2xl font-bold text-[#005F73] mt-6 mb-4">Seamless 24/7 Self-Serve Booking</h3>
-                            <p class="text-lg text-gray-400 mb-4">
-                                Provide your 2 million+ passengers with a frictionless booking journey, anytime, anywhere.
-                            </p>
-                            <ul class="list-disc list-inside text-gray-400 space-y-2 text-left w-full">
-                                <li>Intuitive, mobile-first online booking engine.</li>
-                                <li>Reduce checkout abandonment with a smooth process.</li>
-                                <li>Empower passengers to manage reservations effortlessly.</li>
-                            </ul>
-                        </div>
-                        <div class="feature-card flex flex-col items-center text-center">
-                            <div id="lottie-cx-communication" class="lottie-animation-container"></div>
-                            <h3 class="text-2xl font-bold text-[#005F73] mt-6 mb-4">Proactive Guest Communication & Loyalty</h3>
-                            <p class="text-lg text-gray-400 mb-4">
-                                Keep your passengers informed and delighted, fostering lasting loyalty.
-                            </p>
-                            <ul class="list-disc list-inside text-gray-400 space-y-2 text-left w-full">
-                                <li>Automated pre-trip reminders and real-time updates for delays.</li>
-                                <li>Streamlined post-trip follow-ups for review collection.</li>
-                                <li>Enhance overall satisfaction and build stronger passenger relationships.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="text-center mt-12">
-                        <button id="cxInsightBtn" class="cta-button text-base px-6 py-3">
-                            Get AI Insight on Customer Experience <div id="lottie-ai-brain-small-cx" class="lottie-animation-container w-8 h-8"></div>
-                        </button>
-                    </div>
-                </div>
-            </section>
-
             <!-- Case Studies Section (Original) -->
             <section id="case-studies" class="content-section">
                 <h3 class="text-2xl sm:text-3xl font-semibold mb-6 text-blue-400 border-b border-blue-600 pb-2">
@@ -1536,24 +1423,26 @@
 
             // Initialize moving elements
             const movingElementsContainer = document.getElementById('movingElementsContainer');
-            for (let i = 0; i < 15; i++) {
-                const element = document.createElement('div');
-                element.classList.add('moving-element');
-                const size = Math.random() * 20 + 10; // Size between 10px and 30px
-                element.style.width = `${size}px`;
-                element.style.height = `${size}px`;
-                element.style.left = `${Math.random() * 100}vw`;
-                element.style.top = `${Math.random() * 100}vh`;
-                element.style.animationDuration = `${Math.random() * 10 + 5}s`; // 5-15s duration
-                element.style.animationDelay = `${Math.random() * 5}s`; // 0-5s delay
-                // Random offsets for the float animation
-                element.style.setProperty('--x-offset-1', `${(Math.random() - 0.5) * 200}px`);
-                element.style.setProperty('--y-offset-1', `${(Math.random() - 0.5) * 200}px`);
-                element.style.setProperty('--x-offset-2', `${(Math.random() - 0.5) * 200}px`);
-                element.style.setProperty('--y-offset-2', `${(Math.random() - 0.5) * 200}px`);
-                element.style.setProperty('--x-offset-3', `${(Math.random() - 0.5) * 200}px`);
-                element.style.setProperty('--y-offset-3', `${(Math.random() - 0.5) * 200}px`);
-                movingElementsContainer.appendChild(element);
+            if (movingElementsContainer) {
+                for (let i = 0; i < 15; i++) {
+                    const element = document.createElement('div');
+                    element.classList.add('moving-element');
+                    const size = Math.random() * 20 + 10; // Size between 10px and 30px
+                    element.style.width = `${size}px`;
+                    element.style.height = `${size}px`;
+                    element.style.left = `${Math.random() * 100}vw`;
+                    element.style.top = `${Math.random() * 100}vh`;
+                    element.style.animationDuration = `${Math.random() * 10 + 5}s`; // 5-15s duration
+                    element.style.animationDelay = `${Math.random() * 5}s`; // 0-5s delay
+                    // Random offsets for the float animation
+                    element.style.setProperty('--x-offset-1', `${(Math.random() - 0.5) * 200}px`);
+                    element.style.setProperty('--y-offset-1', `${(Math.random() - 0.5) * 200}px`);
+                    element.style.setProperty('--x-offset-2', `${(Math.random() - 0.5) * 200}px`);
+                    element.style.setProperty('--y-offset-2', `${(Math.random() - 0.5) * 200}px`);
+                    element.style.setProperty('--x-offset-3', `${(Math.random() - 0.5) * 200}px`);
+                    element.style.setProperty('--y-offset-3', `${(Math.random() - 0.5) * 200}px`);
+                    movingElementsContainer.appendChild(element);
+                }
             }
         });
 
@@ -1562,9 +1451,11 @@
         document.addEventListener('mousemove', (e) => {
             const parallaxBg = document.getElementById('parallaxBg');
             const speed = 0.05; // Increased for more noticeable movement
-            const x = (window.innerWidth - e.pageX * speed) / 100;
-            const y = (window.innerHeight - e.pageY * speed) / 100;
-            parallaxBg.style.transform = `translate(${x}px, ${y}px)`;
+            if (parallaxBg) {
+                const x = (window.innerWidth - e.pageX * speed) / 100;
+                const y = (window.innerHeight - e.pageY * speed) / 100;
+                parallaxBg.style.transform = `translate(${x}px, ${y}px)`;
+            }
         });
 
         // Function to copy text to clipboard
@@ -1602,435 +1493,486 @@
             }, 3000); // Auto-hide after 3 seconds
         }
 
-        // Category filtering logic
-        document.querySelectorAll('.category-filter-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                const category = button.dataset.category;
-                const sections = document.querySelectorAll('.content-section');
-                const mainContent = document.querySelector('main');
-
-                sections.forEach(section => {
-                    if (category === 'all' || section.id === category) {
-                        section.classList.remove('hidden-section');
-                    } else {
-                        section.classList.add('hidden-section');
-                    }
-                });
-
-                // Scroll to the top of the main content area to prevent jumps
-                mainContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-                // Update active button style
-                document.querySelectorAll('.category-filter-btn').forEach(btn => {
-                    btn.classList.remove('bg-blue-600');
-                    btn.classList.add('bg-gray-700');
-                });
-                button.classList.remove('bg-gray-700');
-                button.classList.add('bg-blue-600');
-            });
-        });
-
-        // Clickable "What You Can Find on This Page" boxes for scrolling
-        document.querySelectorAll('#what-you-can-find-section [data-target]').forEach(box => {
-            box.addEventListener('click', function() {
-                const targetId = this.dataset.target;
-                const targetElement = document.getElementById(targetId);
-                const allContentButton = document.querySelector('.category-filter-btn[data-category="all"]');
-
-                if (targetElement && allContentButton) {
-                    // 1. First, "click" the "All Content" button
-                    allContentButton.click();
-
-                    // 2. Then, after a short delay, scroll to the target section
-                    setTimeout(() => {
-                        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                        
-                        // Also activate the corresponding filter button if it exists
-                        const filterButton = document.querySelector(`.category-filter-btn[data-category="${targetId}"]`);
-                        if (filterButton) {
-                            document.querySelectorAll('.category-filter-btn').forEach(btn => {
-                                btn.classList.remove('bg-blue-600');
-                                btn.classList.add('bg-gray-700');
-                            });
-                            filterButton.classList.remove('bg-gray-700');
-                            filterButton.classList.add('bg-blue-600');
-                        }
-                    }, 100); // Small delay to allow filter to apply
-                }
-            });
-        });
-
-
-        // API Key
-        const API_KEY = ""; // Replaced with the provided API key
-
-        // AI Explanation Modal & Elements
-        const insightsModal = document.getElementById('insightsModal');
-        const modalTitle = insightsModal.querySelector('#modalTitle');
-        const modalText = insightsModal.querySelector('#modalText');
-        const modalLoadingSpinner = insightsModal.querySelector('#modalLoadingSpinner');
-        const copyInsightsBtn = document.getElementById('copyInsightsBtn');
-        const loadingOverlay = document.getElementById('loadingOverlay');
-
-        // Function to show/hide the full-page loading overlay
-        function showLoading() {
-            loadingOverlay.classList.add('show');
-        }
-
-        function hideLoading() {
-            loadingOverlay.classList.remove('show');
-        }
-
-        // Function to show the AI insights modal
-        function showInsightModal(title) {
-            modalTitle.textContent = title; // Set the title immediately
-            modalText.innerHTML = '<div class="ai-loading-spinner"><span class="loading-spinner"></span> Generating insight...</div>'; // Show internal modal spinner and message
-            modalLoadingSpinner.classList.remove('hidden'); // Ensure modal's internal spinner is visible
-            copyInsightsBtn.classList.add('hidden'); // Hide copy button
-            insightsModal.classList.add('show'); // Show the modal
-        }
-
-        // Function to hide the AI insights modal
-        function hideInsightModal() {
-            insightsModal.classList.remove('show'); // Hide the modal
-            modalText.innerHTML = ''; // Clear content
-            modalTitle.textContent = ''; // Clear title
-            modalLoadingSpinner.classList.add('hidden'); // Hide spinner
-            copyInsightsBtn.classList.add('hidden'); // Hide copy button
-        }
-
-        // Close button event listener for the modal
-        insightsModal.querySelector('.close-button').addEventListener('click', hideInsightModal);
-
-        const impactPrompts = {
-            'overall-experience': "Explain the significance of Zaui's 25 years of experience (since 1999, working with thousands of operators) for a large transport company like Aircoach, highlighting how this longevity and experience translate into benefits such as stability, refined features, and deep industry understanding. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'overall-growth': "Explain the significance of Zaui's average client growth of 14% year-over-year for a company like Aircoach, detailing what this consistent growth implies for their potential in terms of scalability and market expansion. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'revenue-275-lifetime': "Explain the significance of long-term Zaui users scaling their business by 275% since adoption, and how this long-term growth potential applies to Aircoach, emphasizing sustained competitive advantage. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'revenue-20-peak': "Explain how Zaui's dynamic pricing can lead to a 20% revenue increase in peak season for Aircoach, focusing on optimizing high-demand periods and strategically influencing passenger flow. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'channels-30-agents': "Explain how Zaui's agent portal can drive 30% more indirect bookings for Aircoach from hotels, affiliates, and concierges, expanding their sales network efficiently. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'channels-global-reach': "Explain how Zaui provides global reach with integrations like Viator, Expedia, and Google Things to Do, and how this benefits Aircoach in reaching international passengers without high commissions. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'channels-no-overbookings': "Explain how Zaui's real-time inventory sync across all channels (direct, OTA, agent) eliminates overbookings, ensuring critical accuracy and reliability for Aircoach's high-frequency operations. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'channels-track-roi': "Explain how Zaui's unique affiliate links and commission tracking provide full transparency on partner ROI, allowing Aircoach to optimize its reseller relationships and marketing spend. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'channels-multiple-brands': "Explain how Zaui allows selling under multiple brands or locations from one system and its relevance for Aircoach's diverse services (e.g., airport shuttles, private hire) and potential future expansion. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'operations-75-workload': "Explain how Zaui automates bookings, confirmations, payments, and communications to cut office workload by 75% and the potential impact on Aircoach's administrative efficiency. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'operations-grow-without-staff': "Explain how Zaui enables growing bookings without growing staff and how this scalability benefits Aircoach's expanding passenger volume. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'operations-speed-checkin': "Explain how Zaui's mobile apps and QR ticket scanning speed up boarding and check-in, and how this improves Aircoach's operational flow, especially at busy airport terminals. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'operations-consolidate-tools': "Explain how Zaui consolidates CRM, POS, OTA manager, and more into one unified platform, and the financial and operational benefits of this system consolidation for Aircoach. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'guest-50-online': "Explain how Zaui can help Aircoach shift up to 50% of its bookings online, enhancing convenience for passengers and significantly reducing phone-based administrative tasks. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'guest-10x-reviews': "Explain how Zaui's automated review requests can drive a massive increase in guest reviews (10x more), enhancing Aircoach's online reputation and attracting new passengers. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'guest-sell-24-7': "Explain the benefit of Zaui's always-on booking capability (sell 24/7, even while you sleep) for Aircoach, particularly for international travelers and convenience. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'guest-fewer-abandoned': "Explain how Zaui's user-friendly checkout leads to fewer abandoned carts and more confirmed bookings, directly impacting Aircoach's conversion rates and revenue. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
-            'guest-5-star-repeat': "Explain how Zaui helps Aircoach earn more 5-star reviews and repeat business through smooth operations and great communication, and its long-term value for Aircoach's brand loyalty. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 2]",
-            'general-overview': "Provide a high-level overview of how Zaui can drive significant growth and operational excellence for a large transport company like Aircoach. What does this mean for Aircoach? Structure your response with:\n\nThe Core Promise:\n[1-2 sentences]\n\nKey Impact Areas:\n* Revenue Optimization\n* Operational Efficiency\n* Enhanced Customer Experience\n* Data-Driven Decisions"
-        };
-
-
-        async function getAIExplanation(promptText) {
-            showLoading(); // Show full-page bus loading animation
-
-            try {
-                // Add a small delay to ensure the loading animation is visible
-                await new Promise(resolve => setTimeout(resolve, 300));
-
-                let chatHistory = [];
-                chatHistory.push({ role: "user", parts: [{ text: promptText }] });
-                const payload = { contents: chatHistory };
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
-                
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
-                });
-                const result = await response.json();
-                
-                if (result.candidates && result.candidates.length > 0 &&
-                    result.candidates[0].content && result.candidates[0].content.parts &&
-                    result.candidates[0].content.parts.length > 0) {
-                    const rawText = result.candidates[0].content.parts[0].text;
-                    
-                    // Replace bold markdown with <strong> and really remove remaining '*'
-                    let formattedText = rawText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\*/g, '');
-
-                    let finalContent = '';
-                    const sections = formattedText.split('\n\n');
+        document.addEventListener('DOMContentLoaded', () => {
+            // Category filtering logic
+            document.querySelectorAll('.category-filter-btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    const category = button.dataset.category;
+                    const sections = document.querySelectorAll('.content-section');
+                    const mainContent = document.querySelector('main');
 
                     sections.forEach(section => {
-                        const trimmedSection = section.trim();
-                        if (trimmedSection === '') return;
-
-                        const firstLine = trimmedSection.split('\n')[0];
-
-                        if (firstLine.startsWith('Why it matters for Aircoach:')) {
-                            finalContent += `<h4>Why it matters for Aircoach:</h4><p>${trimmedSection.substring(firstLine.length).trim()}</p>`;
-                        } else if (firstLine.startsWith('Key Benefits:')) {
-                            finalContent += `<h4>Key Benefits:</h4><ul>`;
-                            trimmedSection.substring(firstLine.length).split('\n').forEach(item => {
-                                if (item.trim().startsWith('•') || item.trim().match(/^\d+\.\s/)) {
-                                    finalContent += `<li>${item.replace(/^(\•|\d+\.)\s/, '').trim()}</li>`;
-                                } else if (item.trim() !== '') {
-                                    finalContent += `<li>${item.trim()}</li>`; // Catch any remaining lines as list items
-                                }
-                            });
-                            finalContent += `</ul>`;
-                        } else if (firstLine.startsWith('Strategic Imperative:')) {
-                            finalContent += `<h4>Strategic Imperative:</h4><p>${trimmedSection.substring(firstLine.length).trim()}</p>`;
-                        } else if (firstLine.startsWith('Actionable Zaui Steps:')) {
-                            finalContent += `<h4>Actionable Zaui Steps:</h4><ol>`;
-                            trimmedSection.substring(firstLine.length).split('\n').forEach(item => {
-                                if (item.trim().match(/^\d+\.\s/)) {
-                                    finalContent += `<li>${item.replace(/^\d+\.\s/, '').trim()}</li>`;
-                                }
-                            });
-                            finalContent += `</ol>`;
-                        } else if (firstLine.startsWith('The Core Promise:')) {
-                            finalContent += `<h4>The Core Promise:</h4><p>${trimmedSection.substring(firstLine.length).trim()}</p>`;
-                        } else if (firstLine.startsWith('Key Impact Areas:')) {
-                            finalContent += `<h4>Key Impact Areas:</h4><ul>`;
-                            trimmedSection.substring(firstLine.length).split('\n').forEach(item => {
-                                if (item.trim().startsWith('•')) {
-                                    finalContent += `<li>${item.replace(/^•\s/, '').trim()}</li>`;
-                                } else if (item.trim() !== '') {
-                                    finalContent += `<li>${item.trim()}</li>`;
-                                }
-                            });
-                            finalContent += `</ul>`;
-                        }
-                        else if (firstLine.startsWith('Revenue Growth Pillars:')) {
-                            finalContent += `<h4>Revenue Growth Pillars:</h4><p>${trimmedSection.substring(firstLine.length).trim()}</p>`;
-                        }
-                        else if (firstLine.startsWith('Zaui\'s Revenue Tools:')) {
-                            finalContent += `<h4>Zaui's Revenue Tools:</h4><ul>`;
-                            trimmedSection.substring(firstLine.length).split('\n').forEach(item => {
-                                if (item.trim().startsWith('•')) {
-                                    finalContent += `<li>${item.replace(/^•\s/, '').trim()}</li>`;
-                                }
-                            });
-                            finalContent += `</ul>`;
-                        }
-                        else if (firstLine.startsWith('Operational Transformation:')) {
-                            finalContent += `<h4>Operational Transformation:</h4><p>${trimmedSection.substring(firstLine.length).trim()}</p>`;
-                        }
-                        else if (firstLine.startsWith('Efficiency Drivers:')) {
-                            finalContent += `<h4>Efficiency Drivers:</h4><ul>`;
-                            trimmedSection.substring(firstLine.length).split('\n').forEach(item => {
-                                if (item.trim().startsWith('•')) {
-                                    finalContent += `<li>${item.replace(/^•\s/, '').trim()}</li>`;
-                                }
-                            });
-                            finalContent += `</ul>`;
-                        }
-                        else if (firstLine.startsWith('Elevating Guest Journeys:')) {
-                            finalContent += `<h4>Elevating Guest Journeys:</h4><p>${trimmedSection.substring(firstLine.length).trim()}</p>`;
-                        }
-                        else if (firstLine.startsWith('Customer-Centric Features:')) {
-                            finalContent += `<h4>Customer-Centric Features:</h4><ul>`;
-                            trimmedSection.substring(firstLine.length).split('\n').forEach(item => {
-                                if (item.trim().startsWith('•')) {
-                                    finalContent += `<li>${item.replace(/^•\s/, '').trim()}</li>`;
-                                }
-                            });
-                            finalContent += `</ul>`;
-                        }
-                        else {
-                            finalContent += `<p>${trimmedSection}</p>`; // Default to paragraph if no specific heading match
+                        if (category === 'all' || section.id === category) {
+                            section.classList.remove('hidden-section');
+                        } else {
+                            section.classList.add('hidden-section');
                         }
                     });
-                    modalText.innerHTML = finalContent; // Set innerHTML to modalText
-                    copyInsightsBtn.onclick = () => copyToClipboard(modalText.innerText); // Copy content from modalText
-                    copyInsightsBtn.classList.remove('hidden'); // Show copy button
-                    modalLoadingSpinner.classList.add('hidden'); // Hide modal's internal spinner
-                    return finalContent;
 
-                } else {
-                    console.error("AI response structure unexpected:", result);
-                    modalText.innerHTML = "<p class='text-red-500'>Failed to generate insight. Please try again.</p>"; // Set text content for error
-                    modalLoadingSpinner.classList.add('hidden'); // Hide modal's internal spinner
-                    return "<p class='text-red-500'>Failed to generate insight. Please try again.</p>";
-                }
-            } catch (error) {
-                console.error("Error calling Gemini API:", error);
-                modalText.innerHTML = "<p class='text-red-500'>An error occurred while fetching insight. Please try again later.</p>"; // Set text content for error
-                modalLoadingSpinner.classList.add('hidden'); // Hide modal's internal spinner
-                return "<p class='text-red-500'>An error occurred while fetching insight. Please try again later.</p>";
-            } finally {
-                hideLoading(); // Hide full-page bus loading animation
-            }
-        }
-
-        // Event listeners for KPI tiles
-        document.querySelectorAll('.impact-tile').forEach(tile => {
-            tile.addEventListener('click', async () => {
-                const impactType = tile.dataset.impactType;
-                const value = tile.dataset.value;
-                const description = tile.dataset.description;
-                
-                showInsightModal(`Insight: ${value} ${description}`); // Show modal with title
-                const initialPrompt = impactPrompts[impactType];
-                await getAIExplanation(initialPrompt); // Call getAIExplanation to populate content
-            });
-        });
-
-        // Event listeners for new AI Insight buttons (Revenue, Efficiency, CX)
-        document.getElementById('revenueInsightBtn').addEventListener('click', async () => {
-            showInsightModal(`Revenue Insights for Aircoach`); // Show modal with title
-            const prompt = "Explain how Zaui's revenue-driving features specifically benefit a large transport company like Aircoach, covering dynamic pricing, channel expansion, and upsells. What does this mean for Aircoach? Structure your response with:\n\nRevenue Growth Pillars:\n[1-2 sentences]\n\nZaui's Revenue Tools:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]\n* [Bullet point 4]";
-            await getAIExplanation(prompt);
-        });
-
-        document.getElementById('efficiencyInsightBtn').addEventListener('click', async () => {
-            showInsightModal(`Efficiency Insights for Aircoach`); // Show modal with title
-            const prompt = "Detail how Zaui's operational efficiency features can transform a large transport company like Aircoach's daily operations, including automation, scheduling, and check-in improvements. What does this mean for Aircoach? Structure your response with:\n\nOperational Transformation:\n[1-2 sentences]\n\nEfficiency Drivers:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]\n* [Bullet point 4]";
-            await getAIExplanation(prompt);
-        });
-
-        document.getElementById('cxInsightBtn').addEventListener('click', async () => {
-            showInsightModal(`Customer Experience Insights for Aircoach`); // Show modal with title
-            const prompt = "Describe how Zaui enhances the customer experience for millions of passengers using a service like Aircoach, focusing on self-serve booking, communication, and loyalty. What does this mean for Aircoach? Structure your response with:\n\nElevating Guest Journeys:\n[1-2 sentences]\n\nCustomer-Centric Features:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]\n* [Bullet point 4]";
-            await getAIExplanation(prompt);
-        });
-
-        // Case Study AI Insight buttons
-        document.querySelectorAll('.generate-insights-btn').forEach(button => {
-            button.addEventListener('click', async () => {
-                const title = button.dataset.title;
-                const snippet = button.dataset.snippet;
-
-                showInsightModal(`AI Insight for Aircoach: ${title}`); // Show modal with title and loading spinner
-                button.disabled = true; // Disable button during loading
-
-                const prompt = `Provide an AI insight for Aircoach based on the case study titled "${title}" which highlights "${snippet}". Focus on how Aircoach can leverage these findings. Structure your response with:\n\nStrategic Imperative for Aircoach:\n[1-2 sentences]\n\nActionable Zaui Steps:\n1. [Step 1]\n2. [Step 2]\n3. [Step 3]`;
-
-                try {
-                    let chatHistory = [];
-                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-                    const payload = { contents: chatHistory };
-                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
-
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-
-                    const result = await response.json();
-                    if (result.candidates && result.candidates.length > 0 &&
-                        result.candidates[0].content && result.candidates[0].content.parts &&
-                        result.candidates[0].content.parts.length > 0) {
-                        const text = result.candidates[0].content.parts[0].text;
-                        modalText.innerHTML = text; // Use innerHTML for formatted text
-                        copyInsightsBtn.onclick = () => copyToClipboard(text);
-                        copyInsightsBtn.classList.remove('hidden'); // Show copy button
-                    } else {
-                        modalText.innerHTML = 'Failed to generate insight. Please try again.';
+                    // Scroll to the top of the main content area to prevent jumps
+                    if (mainContent) {
+                        mainContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     }
-                } catch (error) {
-                    console.error('Error generating insight:', error);
-                    modalText.innerHTML = 'An error occurred while generating the insight. Please try again later.';
-                } finally {
-                    modalLoadingSpinner.classList.add('hidden'); // Hide spinner
-                    button.disabled = false; // Re-enable button
-                }
-            });
-        });
 
-        // Blog Summarizer
-        document.querySelectorAll('.summarize-blog-btn').forEach(button => {
-            button.addEventListener('click', async () => {
-                const title = button.dataset.title;
-                const snippet = button.dataset.snippet;
-                
-                showInsightModal(`AI Summary for: ${title}`); // Show modal with title and loading spinner
-                button.disabled = true; // Disable button during loading
-
-                const prompt = `Summarize the key takeaways from a blog post titled "${title}" which is about "${snippet}". Focus on actionable insights for transport operators. What does this mean for Aircoach?`;
-
-                try {
-                    let chatHistory = [];
-                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-                    const payload = { contents: chatHistory };
-                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
-
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
+                    // Update active button style
+                    document.querySelectorAll('.category-filter-btn').forEach(btn => {
+                        btn.classList.remove('bg-blue-600');
+                        btn.classList.add('bg-gray-700');
                     });
-
-                    const result = await response.json();
-                    if (result.candidates && result.candidates.length > 0 &&
-                        result.candidates[0].content && result.candidates[0].content.parts &&
-                        result.candidates[0].content.parts.length > 0) {
-                        const text = result.candidates[0].content.parts[0].text;
-                        modalText.innerHTML = text; // Use innerHTML for formatted text
-                        copyInsightsBtn.onclick = () => copyToClipboard(text);
-                        copyInsightsBtn.classList.remove('hidden'); // Show copy button
-                    } else {
-                        modalText.innerHTML = 'Failed to generate summary. Please try again.';
-                    }
-                } catch (error) {
-                    console.error('Error generating summary:', error);
-                    modalText.innerHTML = 'An error occurred while generating the summary. Please try again later.';
-                } finally {
-                    modalLoadingSpinner.classList.add('hidden'); // Hide spinner
-                    button.disabled = false; // Re-enable button
-                }
-            });
-        });
-
-        // Partnership Benefit Generator
-        const generateBenefitBtn = document.getElementById('generateBenefitBtn');
-        const benefitAspectInput = document.getElementById('benefitAspectInput');
-        const generatedBenefitOutput = document.getElementById('generatedBenefitOutput');
-        const benefitText = document.getElementById('benefitText');
-        const benefitLoadingSpinner = document.getElementById('benefitLoadingSpinner');
-        const copyBenefitBtn = document.getElementById('copyBenefitBtn');
-
-        generateBenefitBtn.addEventListener('click', async () => {
-            const aspect = benefitAspectInput.value.trim();
-            if (!aspect) {
-                showNotification('Please enter a transportation aspect to generate a benefit insight.');
-                return;
-            }
-
-            generatedBenefitOutput.classList.add('hidden'); // Hide previous output
-            benefitText.textContent = ''; // Clear previous text
-            benefitLoadingSpinner.classList.remove('hidden'); // Show spinner
-            generateBenefitBtn.disabled = true; // Disable button
-
-            const prompt = `Explain how the partnership between Aircoach and Zaui specifically benefits "${aspect}" in the transportation industry. Be concise and highlight technological advantages. What does this mean for Aircoach?`;
-
-            try {
-                let chatHistory = [];
-                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-                const payload = { contents: chatHistory };
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
-
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload)
+                    button.classList.remove('bg-gray-700');
+                    button.classList.add('bg-blue-600');
                 });
+            });
 
+            // Clickable "What You Can Find on This Page" boxes for scrolling
+            document.querySelectorAll('#what-you-can-find-section [data-target]').forEach(box => {
+                box.addEventListener('click', function() {
+                    const targetId = this.dataset.target;
+                    const targetElement = document.getElementById(targetId);
+                    const allContentButton = document.querySelector('.category-filter-btn[data-category="all"]');
+
+                    if (targetElement && allContentButton) {
+                        // 1. First, "click" the "All Content" button
+                        allContentButton.click();
+
+                        // 2. Then, after a short delay, scroll to the target section
+                        setTimeout(() => {
+                            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            
+                            // Also activate the corresponding filter button if it exists
+                            const filterButton = document.querySelector(`.category-filter-btn[data-category="${targetId}"]`);
+                            if (filterButton) {
+                                document.querySelectorAll('.category-filter-btn').forEach(btn => {
+                                    btn.classList.remove('bg-blue-600');
+                                    btn.classList.add('bg-gray-700');
+                                });
+                                filterButton.classList.remove('bg-gray-700');
+                                filterButton.classList.add('bg-blue-600');
+                            }
+                        }, 100); // Small delay to allow filter to apply
+                    }
+                });
+            });
+
+
+            // API Key
+            const API_KEY = "";
+        
+            // AI Explanation Modal & Elements
+            const insightsModal = document.getElementById('insightsModal');
+            const modalTitle = insightsModal.querySelector('#modalTitle');
+            const modalText = insightsModal.querySelector('#modalText');
+            const modalLoadingSpinner = insightsModal.querySelector('#modalLoadingSpinner');
+            const copyInsightsBtn = document.getElementById('copyInsightsBtn');
+            const loadingOverlay = document.getElementById('loadingOverlay');
+
+            // Function to show/hide the full-page loading overlay
+            function showLoading() {
+                loadingOverlay.classList.add('show');
+            }
+
+            function hideLoading() {
+                loadingOverlay.classList.remove('show');
+            }
+
+            // Function to show the AI insights modal
+            function showInsightModal(title) {
+                modalTitle.textContent = title; // Set the title immediately
+                modalText.innerHTML = '<div class="ai-loading-spinner"><span class="loading-spinner"></span> Generating insight...</div>'; // Show internal modal spinner and message
+                modalLoadingSpinner.classList.remove('hidden'); // Ensure modal's internal spinner is visible
+                copyInsightsBtn.classList.add('hidden'); // Hide copy button
+                insightsModal.classList.add('show'); // Show the modal
+            }
+
+            // Function to hide the AI insights modal
+            function hideInsightModal() {
+                insightsModal.classList.remove('show'); // Hide the modal
+                modalText.innerHTML = ''; // Clear content
+                modalTitle.textContent = ''; // Clear title
+                modalLoadingSpinner.classList.add('hidden'); // Hide spinner
+                copyInsightsBtn.classList.add('hidden'); // Hide copy button
+            }
+
+            // Close button event listener for the modal
+            const closeButton = insightsModal.querySelector('.close-button');
+            if (closeButton) {
+                closeButton.addEventListener('click', hideInsightModal);
+            }
+
+            const impactPrompts = {
+                'overall-experience': "Explain the significance of Zaui's 25 years of experience (since 1999, working with thousands of operators) for a large transport company like Aircoach, highlighting how this longevity and experience translate into benefits such as stability, refined features, and deep industry understanding. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'overall-growth': "Explain the significance of Zaui's average client growth of 14% year-over-year for a company like Aircoach, detailing what this consistent growth implies for their potential in terms of scalability and market expansion. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'revenue-275-lifetime': "Explain the significance of long-term Zaui users scaling their business by 275% since adoption, and how this long-term growth potential applies to Aircoach, emphasizing sustained competitive advantage. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'revenue-20-peak': "Explain how Zaui's dynamic pricing can lead to a 20% revenue increase in peak season for Aircoach, focusing on optimizing high-demand periods and strategically influencing passenger flow. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'channels-30-agents': "Explain how Zaui's agent portal can drive 30% more indirect bookings for Aircoach from hotels, affiliates, and concierges, expanding their sales network efficiently. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'channels-global-reach': "Explain how Zaui provides global reach with integrations like Viator, Expedia, and Google Things to Do, and how this benefits Aircoach in reaching international passengers without high commissions. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'channels-no-overbookings': "Explain how Zaui's real-time inventory sync across all channels (direct, OTA, agent) eliminates overbookings, ensuring critical accuracy and reliability for Aircoach's high-frequency operations. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'channels-track-roi': "Explain how Zaui's unique affiliate links and commission tracking provide full transparency on partner ROI, allowing Aircoach to optimize its reseller relationships and marketing spend. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'channels-multiple-brands': "Explain how Zaui allows selling under multiple brands or locations from one system and its relevance for Aircoach's diverse services (e.g., airport shuttles, private hire) and potential future expansion. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'operations-75-workload': "Explain how Zaui automates bookings, confirmations, payments, and communications to cut office workload by 75% and the potential impact on Aircoach's administrative efficiency. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'operations-grow-without-staff': "Explain how Zaui enables growing bookings without growing staff and how this scalability benefits Aircoach's expanding passenger volume. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'operations-speed-checkin': "Explain how Zaui's mobile apps and QR ticket scanning speed up boarding and check-in, and how this improves Aircoach's operational flow, especially at busy airport terminals. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'operations-consolidate-tools': "Explain how Zaui consolidates CRM, POS, OTA manager, and more into one unified platform, and the financial and operational benefits of this system consolidation for Aircoach. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'guest-50-online': "Explain how Zaui can help Aircoach shift up to 50% of its bookings online, enhancing convenience for passengers and significantly reducing phone-based administrative tasks. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'guest-10x-reviews': "Explain how Zaui's automated review requests can drive a massive increase in guest reviews (10x more), enhancing Aircoach's online reputation and attracting new passengers. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'guest-sell-24-7': "Explain the benefit of Zaui's always-on booking capability (sell 24/7, even while you sleep) for Aircoach, particularly for international travelers and convenience. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'guest-fewer-abandoned': "Explain how Zaui's user-friendly checkout leads to fewer abandoned carts and more confirmed bookings, directly impacting Aircoach's conversion rates and revenue. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]",
+                'guest-5-star-repeat': "Explain how Zaui helps Aircoach earn more 5-star reviews and repeat business through smooth operations and great communication, and its long-term value for Aircoach's brand loyalty. What does this mean for Aircoach? Structure your response with:\n\nWhy it matters for Aircoach:\n[1-2 sentences]\n\nKey Benefits:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 2]",
+                'general-overview': "Provide a high-level overview of how Zaui can drive significant growth and operational excellence for a large transport company like Aircoach. What does this mean for Aircoach? Structure your response with:\n\nThe Core Promise:\n[1-2 sentences]\n\nKey Impact Areas:\n* Revenue Optimization\n* Operational Efficiency\n* Enhanced Customer Experience\n* Data-Driven Decisions"
+            };
+
+
+            async function getAIExplanation(promptText) {
+                showLoading(); // Show full-page bus loading animation
+
+                try {
+                    // Add a small delay to ensure the loading animation is visible
+                    await new Promise(resolve => setTimeout(resolve, 300));
+
+                    let chatHistory = [];
+                    chatHistory.push({ role: "user", parts: [{ text: promptText }] });
+                    const payload = { contents: chatHistory };
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+                    
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
                     const result = await response.json();
+                    
                     if (result.candidates && result.candidates.length > 0 &&
                         result.candidates[0].content && result.candidates[0].content.parts &&
                         result.candidates[0].content.parts.length > 0) {
-                        const text = result.candidates[0].content.parts[0].text;
-                        benefitText.textContent = text;
-                        generatedBenefitOutput.classList.remove('hidden');
-                        copyBenefitBtn.onclick = () => copyToClipboard(text);
+                        const rawText = result.candidates[0].content.parts[0].text;
+                        
+                        // Replace bold markdown with <strong> and really remove remaining '*'
+                        let formattedText = rawText.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\*/g, '');
+
+                        let finalContent = '';
+                        const sections = formattedText.split('\n\n');
+
+                        sections.forEach(section => {
+                            const trimmedSection = section.trim();
+                            if (trimmedSection === '') return;
+
+                            const firstLine = trimmedSection.split('\n')[0];
+
+                            if (firstLine.startsWith('Why it matters for Aircoach:')) {
+                                finalContent += `<h4>Why it matters for Aircoach:</h4><p>${trimmedSection.substring(firstLine.length).trim()}</p>`;
+                            } else if (firstLine.startsWith('Key Benefits:')) {
+                                finalContent += `<h4>Key Benefits:</h4><ul>`;
+                                trimmedSection.substring(firstLine.length).split('\n').forEach(item => {
+                                    if (item.trim().startsWith('•') || item.trim().match(/^\d+\.\s/)) {
+                                        finalContent += `<li>${item.replace(/^(\•|\d+\.)\s/, '').trim()}</li>`;
+                                    } else if (item.trim() !== '') {
+                                        finalContent += `<li>${item.trim()}</li>`; // Catch any remaining lines as list items
+                                    }
+                                });
+                                finalContent += `</ul>`;
+                            } else if (firstLine.startsWith('Strategic Imperative:')) {
+                                finalContent += `<h4>Strategic Imperative:</h4><p>${trimmedSection.substring(firstLine.length).trim()}</p>`;
+                            } else if (firstLine.startsWith('Actionable Zaui Steps:')) {
+                                finalContent += `<h4>Actionable Zaui Steps:</h4><ol>`;
+                                trimmedSection.substring(firstLine.length).split('\n').forEach(item => {
+                                    if (item.trim().match(/^\d+\.\s/)) {
+                                        finalContent += `<li>${item.replace(/^\d+\.\s/, '').trim()}</li>`;
+                                    }
+                                });
+                                finalContent += `</ol>`;
+                            } else if (firstLine.startsWith('The Core Promise:')) {
+                                finalContent += `<h4>The Core Promise:</h4><p>${trimmedSection.substring(firstLine.length).trim()}</p>`;
+                            } else if (firstLine.startsWith('Key Impact Areas:')) {
+                                finalContent += `<h4>Key Impact Areas:</h4><ul>`;
+                                trimmedSection.substring(firstLine.length).split('\n').forEach(item => {
+                                    if (item.trim().startsWith('•')) {
+                                        finalContent += `<li>${item.replace(/^•\s/, '').trim()}</li>`;
+                                    } else if (item.trim() !== '') {
+                                        finalContent += `<li>${item.trim()}</li>`;
+                                    }
+                                });
+                                finalContent += `</ul>`;
+                            }
+                            else if (firstLine.startsWith('Revenue Growth Pillars:')) {
+                                finalContent += `<h4>Revenue Growth Pillars:</h4><p>${trimmedSection.substring(firstLine.length).trim()}</p>`;
+                            }
+                            else if (firstLine.startsWith('Zaui\'s Revenue Tools:')) {
+                                finalContent += `<h4>Zaui's Revenue Tools:</h4><ul>`;
+                                trimmedSection.substring(firstLine.length).split('\n').forEach(item => {
+                                    if (item.trim().startsWith('•')) {
+                                        finalContent += `<li>${item.replace(/^•\s/, '').trim()}</li>`;
+                                    }
+                                });
+                                finalContent += `</ul>`;
+                            }
+                            else if (firstLine.startsWith('Operational Transformation:')) {
+                                finalContent += `<h4>Operational Transformation:</h4><p>${trimmedSection.substring(firstLine.length).trim()}</p>`;
+                            }
+                            else if (firstLine.startsWith('Efficiency Drivers:')) {
+                                finalContent += `<h4>Efficiency Drivers:</h4><ul>`;
+                                trimmedSection.substring(firstLine.length).split('\n').forEach(item => {
+                                    if (item.trim().startsWith('•')) {
+                                        finalContent += `<li>${item.replace(/^•\s/, '').trim()}</li>`;
+                                    }
+                                });
+                                finalContent += `</ul>`;
+                            }
+                            else if (firstLine.startsWith('Elevating Guest Journeys:')) {
+                                finalContent += `<h4>Elevating Guest Journeys:</h4><p>${trimmedSection.substring(firstLine.length).trim()}</p>`;
+                            }
+                            else if (firstLine.startsWith('Customer-Centric Features:')) {
+                                finalContent += `<h4>Customer-Centric Features:</h4><ul>`;
+                                trimmedSection.substring(firstLine.length).split('\n').forEach(item => {
+                                    if (item.trim().startsWith('•')) {
+                                        finalContent += `<li>${item.replace(/^•\s/, '').trim()}</li>`;
+                                    }
+                                });
+                                finalContent += `</ul>`;
+                            }
+                            else {
+                                finalContent += `<p>${trimmedSection}</p>`; // Default to paragraph if no specific heading match
+                            }
+                        });
+                        modalText.innerHTML = finalContent; // Set innerHTML to modalText
+                        copyInsightsBtn.onclick = () => copyToClipboard(modalText.innerText); // Copy content from modalText
+                        copyInsightsBtn.classList.remove('hidden'); // Show copy button
+                        modalLoadingSpinner.classList.add('hidden'); // Hide modal's internal spinner
+                        return finalContent;
+
                     } else {
-                        benefitText.textContent = 'Failed to generate benefit insight. Please try again.';
-                        generatedBenefitOutput.classList.remove('hidden');
+                        console.error("AI response structure unexpected:", result);
+                        modalText.innerHTML = "<p class='text-red-500'>Failed to generate insight. Please try again.</p>"; // Set text content for error
+                        modalLoadingSpinner.classList.add('hidden'); // Hide modal's internal spinner
+                        return "<p class='text-red-500'>Failed to generate insight. Please try again.</p>";
                     }
-            } catch (error) {
-                console.error('Error generating benefit:', error);
-                benefitText.textContent = 'An error occurred while generating the benefit insight. Please try again later.';
-                generatedBenefitOutput.classList.remove('hidden');
-            } finally {
-                benefitLoadingSpinner.classList.add('hidden');
-                generateBenefitBtn.disabled = false;
+                } catch (error) {
+                    console.error("Error calling Gemini API:", error);
+                    modalText.innerHTML = "<p class='text-red-500'>An error occurred while fetching insight. Please try again later.</p>"; // Set text content for error
+                    modalLoadingSpinner.classList.add('hidden'); // Hide modal's internal spinner
+                    return "<p class='text-red-500'>An error occurred while fetching insight. Please try again later.</p>";
+                } finally {
+                    hideLoading(); // Hide full-page bus loading animation
+                }
+            }
+
+            // Event listeners for KPI tiles
+            document.querySelectorAll('.impact-tile').forEach(tile => {
+                tile.addEventListener('click', async () => {
+                    const impactType = tile.dataset.impactType;
+                    const value = tile.dataset.value;
+                    const description = tile.dataset.description;
+                    
+                    showInsightModal(`Insight: ${value} ${description}`); // Show modal with title
+                    const initialPrompt = impactPrompts[impactType];
+                    await getAIExplanation(initialPrompt); // Call getAIExplanation to populate content
+                });
+            });
+
+            // Event listeners for new AI Insight buttons (Revenue, Efficiency, CX)
+            const revenueInsightBtn = document.getElementById('revenueInsightBtn');
+            if (revenueInsightBtn) {
+                revenueInsightBtn.addEventListener('click', async () => {
+                    showInsightModal(`Revenue Insights for Aircoach`); // Show modal with title
+                    const prompt = "Explain how Zaui's revenue-driving features specifically benefit a large transport company like Aircoach, covering dynamic pricing, channel expansion, and upsells. What does this mean for Aircoach? Structure your response with:\n\nRevenue Growth Pillars:\n[1-2 sentences]\n\nZaui's Revenue Tools:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]\n* [Bullet point 4]";
+                    await getAIExplanation(prompt);
+                });
+            }
+
+            const efficiencyInsightBtn = document.getElementById('efficiencyInsightBtn');
+            if (efficiencyInsightBtn) {
+                efficiencyInsightBtn.addEventListener('click', async () => {
+                    showInsightModal(`Efficiency Insights for Aircoach`); // Show modal with title
+                    const prompt = "Detail how Zaui's operational efficiency features can transform a large transport company like Aircoach's daily operations, including automation, scheduling, and check-in improvements. What does this mean for Aircoach? Structure your response with:\n\nOperational Transformation:\n[1-2 sentences]\n\nEfficiency Drivers:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]\n* [Bullet point 4]";
+                    await getAIExplanation(prompt);
+                });
+            }
+            
+            const cxInsightBtn = document.getElementById('cxInsightBtn');
+            if (cxInsightBtn) {
+                cxInsightBtn.addEventListener('click', async () => {
+                    showInsightModal(`Customer Experience Insights for Aircoach`); // Show modal with title
+                    const prompt = "Describe how Zaui enhances the customer experience for millions of passengers using a service like Aircoach, focusing on self-serve booking, communication, and loyalty. What does this mean for Aircoach? Structure your response with:\n\nElevating Guest Journeys:\n[1-2 sentences]\n\nCustomer-Centric Features:\n* [Bullet point 1]\n* [Bullet point 2]\n* [Bullet point 3]\n* [Bullet point 4]";
+                    await getAIExplanation(prompt);
+                });
+            }
+
+
+            // Case Study AI Insight buttons
+            document.querySelectorAll('.generate-insights-btn').forEach(button => {
+                button.addEventListener('click', async () => {
+                    const title = button.dataset.title;
+                    const snippet = button.dataset.snippet;
+
+                    showInsightModal(`AI Insight for Aircoach: ${title}`); // Show modal with title and loading spinner
+                    button.disabled = true; // Disable button during loading
+
+                    const prompt = `Provide an AI insight for Aircoach based on the case study titled "${title}" which highlights "${snippet}". Focus on how Aircoach can leverage these findings. Structure your response with:\n\nStrategic Imperative for Aircoach:\n[1-2 sentences]\n\nActionable Zaui Steps:\n1. [Step 1]\n2. [Step 2]\n3. [Step 3]`;
+
+                    try {
+                        let chatHistory = [];
+                        chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                        const payload = { contents: chatHistory };
+                        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        const result = await response.json();
+                        if (result.candidates && result.candidates.length > 0 &&
+                            result.candidates[0].content && result.candidates[0].content.parts &&
+                            result.candidates[0].content.parts.length > 0) {
+                            const text = result.candidates[0].content.parts[0].text;
+                            modalText.innerHTML = text; // Use innerHTML for formatted text
+                            if (copyInsightsBtn) {
+                                copyInsightsBtn.onclick = () => copyToClipboard(text);
+                                copyInsightsBtn.classList.remove('hidden'); // Show copy button
+                            }
+                        } else {
+                            modalText.innerHTML = 'Failed to generate insight. Please try again.';
+                        }
+                    } catch (error) {
+                        console.error('Error generating insight:', error);
+                        modalText.innerHTML = 'An error occurred while generating the insight. Please try again later.';
+                    } finally {
+                        if (modalLoadingSpinner) {
+                            modalLoadingSpinner.classList.add('hidden'); // Hide spinner
+                        }
+                        button.disabled = false; // Re-enable button
+                    }
+                });
+            });
+
+            // Blog Summarizer
+            document.querySelectorAll('.summarize-blog-btn').forEach(button => {
+                button.addEventListener('click', async () => {
+                    const title = button.dataset.title;
+                    const snippet = button.dataset.snippet;
+                    
+                    showInsightModal(`AI Summary for: ${title}`); // Show modal with title and loading spinner
+                    button.disabled = true; // Disable button during loading
+
+                    const prompt = `Summarize the key takeaways from a blog post titled "${title}" which is about "${snippet}". Focus on actionable insights for transport operators. What does this mean for Aircoach?`;
+
+                    try {
+                        let chatHistory = [];
+                        chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                        const payload = { contents: chatHistory };
+                        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        const result = await response.json();
+                        if (result.candidates && result.candidates.length > 0 &&
+                            result.candidates[0].content && result.candidates[0].content.parts &&
+                            result.candidates[0].content.parts.length > 0) {
+                            const text = result.candidates[0].content.parts[0].text;
+                            modalText.innerHTML = text; // Use innerHTML for formatted text
+                            if (copyInsightsBtn) {
+                                copyInsightsBtn.onclick = () => copyToClipboard(text);
+                                copyInsightsBtn.classList.remove('hidden'); // Show copy button
+                            }
+                        } else {
+                            modalText.innerHTML = 'Failed to generate summary. Please try again.';
+                        }
+                    } catch (error) {
+                        console.error('Error generating summary:', error);
+                        modalText.innerHTML = 'An error occurred while generating the summary. Please try again later.';
+                    } finally {
+                        if (modalLoadingSpinner) {
+                            modalLoadingSpinner.classList.add('hidden'); // Hide spinner
+                        }
+                        button.disabled = false; // Re-enable button
+                    }
+                });
+            });
+
+            // Partnership Benefit Generator
+            const generateBenefitBtn = document.getElementById('generateBenefitBtn');
+            const benefitAspectInput = document.getElementById('benefitAspectInput');
+            const generatedBenefitOutput = document.getElementById('generatedBenefitOutput');
+            const benefitText = document.getElementById('benefitText');
+            const benefitLoadingSpinner = document.getElementById('benefitLoadingSpinner');
+            const copyBenefitBtn = document.getElementById('copyBenefitBtn');
+
+            if (generateBenefitBtn) {
+                generateBenefitBtn.addEventListener('click', async () => {
+                    const aspect = benefitAspectInput.value.trim();
+                    if (!aspect) {
+                        showNotification('Please enter a transportation aspect to generate a benefit insight.');
+                        return;
+                    }
+
+                    if (generatedBenefitOutput) {
+                        generatedBenefitOutput.classList.add('hidden'); // Hide previous output
+                    }
+                    if (benefitText) {
+                        benefitText.textContent = ''; // Clear previous text
+                    }
+                    if (benefitLoadingSpinner) {
+                        benefitLoadingSpinner.classList.remove('hidden'); // Show spinner
+                    }
+                    generateBenefitBtn.disabled = true; // Disable button
+
+                    const prompt = `Explain how the partnership between Aircoach and Zaui specifically benefits "${aspect}" in the transportation industry. Be concise and highlight technological advantages. What does this mean for Aircoach?`;
+
+                    try {
+                        let chatHistory = [];
+                        chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+                        const payload = { contents: chatHistory };
+                        const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+
+                        const response = await fetch(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                            const result = await response.json();
+                            if (result.candidates && result.candidates.length > 0 &&
+                                result.candidates[0].content && result.candidates[0].content.parts &&
+                                result.candidates[0].content.parts.length > 0) {
+                                const text = result.candidates[0].content.parts[0].text;
+                                if (benefitText) {
+                                    benefitText.textContent = text;
+                                }
+                                if (generatedBenefitOutput) {
+                                    generatedBenefitOutput.classList.remove('hidden');
+                                }
+                                if (copyBenefitBtn) {
+                                    copyBenefitBtn.onclick = () => copyToClipboard(text);
+                                }
+                            } else {
+                                if (benefitText) {
+                                    benefitText.textContent = 'Failed to generate benefit insight. Please try again.';
+                                }
+                                if (generatedBenefitOutput) {
+                                    generatedBenefitOutput.classList.remove('hidden');
+                                }
+                            }
+                    } catch (error) {
+                        console.error('Error generating benefit:', error);
+                        if (benefitText) {
+                            benefitText.textContent = 'An error occurred while generating the benefit insight. Please try again later.';
+                        }
+                        if (generatedBenefitOutput) {
+                            generatedBenefitOutput.classList.remove('hidden');
+                        }
+                    } finally {
+                        if (benefitLoadingSpinner) {
+                            benefitLoadingSpinner.classList.add('hidden');
+                        }
+                        if (generateBenefitBtn) {
+                            generateBenefitBtn.disabled = false;
+                        }
+                    }
+                });
             }
         });
     </script>
